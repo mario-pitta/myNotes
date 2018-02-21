@@ -13,11 +13,26 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="manifest" href="manifest.json">
+    
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDexc08DbZcsVQ0hcxzOYasnniRkyEVBHw",
+    authDomain: "my-notes-7625b.firebaseapp.com",
+    databaseURL: "https://my-notes-7625b.firebaseio.com",
+    projectId: "my-notes-7625b",
+    storageBucket: "",
+    messagingSenderId: "998390484019"
+  };
+  firebase.initializeApp(config);
+</script>
 
 
     <script src="js/object.observe.polyfill.js"></script>
     <script src="js/array.observe.polyfill.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/push.js"></script>
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
