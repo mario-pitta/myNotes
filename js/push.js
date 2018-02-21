@@ -20,7 +20,7 @@ messaging.getToken().then(function (currentToken){
       console.log(currentToken);
       return currentToken;
     }else{
-      console.warn("Nenhum ID disponivel. Solicite Permissão ao ADM");
+      console.warn("Nenhum ID disponivel. Solicite Permissão ao Usuario");
     }  
   }).catch(function (err){
     console.warn('Erro ao gerar Novo Token', err);
