@@ -8,6 +8,7 @@ messaging.requestPermission().then(function(){
   return messaging.getToken().then(function (currentToken){
     if (currentToken){
       console.log(currentToken);
+      sendTokenToServer(currentToken);
       return currentToken;
     }else{
       console.warn("Nenhum ID disponivel. Solicite Permissão ao ADM");
